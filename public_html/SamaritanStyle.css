@@ -1,0 +1,46 @@
+/*
+------------
+This code is licensed under DWYW (do whatever you want) license, 
+but I wouldn't mind you mentioning me wherever you use it.
+Thank you.
+*/
+/* 
+    Created on : 10.5.2015, 22:20:04
+    Author     : zelitomas
+*/
+
+body{
+    background-color: #FFFFFF; //change in the future
+}
+
+@keyframes blink {
+    0%   {border-color: transparent transparent /*#9e0808*/ red transparent;}
+    50%  {border-color: transparent transparent /*#9e0808*/ white transparent;}
+    100% {border-color: transparent transparent /*#9e0808*/ red transparent;}
+}
+
+#triangle{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 25px 50px 25px;
+    border-color: transparent transparent /*#9e0808*/ red transparent;
+    margin-top: 20px;
+    animation: blink 3s infinite;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+#line{
+    width: 200px;
+    height: 5px;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
