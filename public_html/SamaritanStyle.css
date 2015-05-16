@@ -13,6 +13,11 @@ body{
     background-color: #FFFFFF; //change in the future
 }
 
+@font-face {
+    font-family: MachineFont;
+    src: url("MachineFont.otf") format("opentype");
+}
+
 @-webkit-keyframes blink {
     0%   {border-color: transparent transparent /*#9e0808*/ red transparent;}
     50%  {border-color: transparent transparent /*#9e0808*/ white transparent;}
@@ -50,4 +55,14 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+#text{
+    font-family: 'MachineFont', sans-serif;
+    font-size: 64px;
+    margin-bottom: 15px;
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translateX(-50%);
 }
