@@ -5,3 +5,11 @@
  */
 
 
+$(document).ready(function() {
+    var x = location.hash;
+    if(x === ""){
+        x = "#SAMARITAN OUT OF ORDER!";
+    }
+    x = x.substring(1).toUpperCase();
+    $("#text").html(x);
+});
