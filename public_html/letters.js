@@ -28,7 +28,12 @@ function writeText(text){
         var toWriteNow = text.substring(0, index);
         var toWriteLater = text.substring(index + 1);
         writeWord(toWriteNow);
-    }else{
+        setTimeout(function() {writeText(toWriteLater);}, 750);
+    }else if(text.length > 0){
+        writeWord(text);
+        setTimeout(function() {reset();}, 750);
+    }
+    else{
         reset();
     }
     
