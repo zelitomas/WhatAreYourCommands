@@ -40,7 +40,7 @@ function writeText(text){
 }
 
 $(document).ready(function() {
-    var x = location.hash;
+    var x = decodeURIComponent(location.hash);
     if(x === ""){
         x = "#SAMARITAN OUT OF ORDER!";
     }
